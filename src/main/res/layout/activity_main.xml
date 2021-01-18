@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <androidx.constraintlayout.widget.ConstraintLayout tools:context=".MainActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        android:textStyle="bold" android:textSize="36sp"
+        android:textColorLink="#E328B4" android:textColorHighlight="#DA34D7"
+        android:textColor="#E422E1" android:textAlignment="center"
+        android:text="Yuki Company" android:layout_marginBottom="120dp"/>
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        android:text="User Name" android:layout_marginBottom="36dp"
+        android:inputType="textPersonName" android:ems="10"
+        android:id="@+id/editTextTextPersonName"/>
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:layout_marginBottom="100dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editTextTextPassword"/>
+
+    <Button android:layout_height="68dp"
+        android:layout_width="140dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Login" android:layout_marginBottom="180dp"
+        android:id="@+id/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:onClick="displayInfo"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
